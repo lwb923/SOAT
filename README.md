@@ -8,7 +8,18 @@
   
 This project contains four files: "soat_model.py", "soat_anchors_test.py", "soat_utils.py" and "demo.py".   
 * "demo.py" shows a simple example of how to use SOAT for training documents.  
->> We uploaded a demo dataset which sampled from 20Newsgroups (including 20 classes and 1000 documents) for demonstration.  
+>> We uploaded a demo dataset which sampled from 20Newsgroups (including 20 classes and 1000 documents) for demonstration. The dataset and its labels are load as folows:
+```python 
+data_name = '20Newsgroups'
+data = np.load("20Newsgroups_demo.npy", allow_pickle=True)
+# label list for all documents
+plabels_ground = np.load("20Newsgroups_labels_demo.npy", allow_pickle=True)
+# label list for only labeled documents, where unlabeled ones are denoted by 0, e.g., [1,2,0,0,...].
+valid_plabels = utils.filter_labels(plabels_ground.copy(), train_test_ratio)
+# dataset: a list of document and a document is a list of words, e.g., ([["a","b", "c"], ["d", "e"]]).
+test_data = data
+```
+>>
 >> We show the average class prediction accuracy of all words in the training steps.  
 >> We use and record the perplexities in each step of training to measure the convergence of model.
      
@@ -36,6 +47,6 @@ word = "key"
 * "soat_utils.py" is a file of common methods.  
   
   
-**NOTE: We keep the topic assignment of all words, so it will spend a bit more time in training. In the example, it takes about 5 minutes.  
+**NOTE: We keep the topic assignment of all words, so it will spend a bit more time in training. For this demo, it takes about several minutes. 
 		
 
