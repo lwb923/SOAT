@@ -25,18 +25,21 @@ test_data = data
      
 * "soat_model.py" is the core code for our model SOAT.  
 >> It produces 12 results: 
->>>>(1) index_word.txt: index-word dictionary;  
->>>>(2) word_index.txt: word-index dictionary;  
->>>>(3) doc_topic_distributions.npy: list of topic distributions for all documents;  
->>>>(4) docs_anchor_words_dict: a dictionary of anchor words corresponding to each document;  
->>>>(5) docs_list: all document-related data, including the word list in each document, the topic corresponding to the word, the dependence strength of the word on the anchor word,and the tf-idf weight (optional);  
->>>>(6) labeled_topic_word_distribution: class-specific topic-word distributions, i.e. class-specific list of word sense vectors.  
->>>>(7) labeled_topic_word: class-specific topic-word frequency lists;  
->>>>(8) per_list: list of perplexities per training rouds;  
->>>>(9) pre_label_probs_list: the class prediction probabilities for each word in the document;  
->>>>(10) topic_word_distribution: topic-word distributions for the dataset;  
->>>>(11) topic_word: topic-word frequencies for the dataset;  
->>>>(12) word_scores_dict: a dictionary of the class-specific scores for all words.  
+| Directory                         | Description                                                                                                                                                                            |
+|-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `index_word.txt`                  | index-word dictionary                                                                                                                                                                  |
+| `word_index.txt`                  | word-index dictionary                                                                                                                                                                  |
+| `doc_topic_distributions.npy`     | list of topic distributions for all documents                                                                                                                                          |
+| `docs_anchor_words_dict`          | a dictionary of anchor words corresponding to each document                                                                                                                            |
+| `docs_list`                       | all document-related data, including the word list in each document, the topic corresponding to the word, the dependence strength of the word on the anchor word,and the tf-idf weight |
+| `labeled_topic_word_distribution` | class-specific topic-word distributions, i.e. class-specific list of word sense vectors                                                                                                |
+| `labeled_topic_word`              | class-specific topic-word frequency lists                                                                                                                                              |
+| `per_list`                        | list of perplexities per training rouds                                                                                                                                                |
+| `pre_label_probs_list`            | the class prediction probabilities for each word in the document                                                                                                                       |
+| `topic_word_distribution`         | topic-word distributions for the dataset                                                                                                                                               |
+| `topic_word`                      | topic-word frequencies for the dataset                                                                                                                                                 |
+| `word_scores_dict`                | a dictionary of the class-specific scores for all words                                                                                                                                |
+
    
 * "soat_anchors_test.py" is an example for showing the class-specific topical words and class anchor words.  
 >>We can set an example word (e.g., "key") as follow:  
