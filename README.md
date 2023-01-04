@@ -8,7 +8,7 @@
 
 This project contains four files: "soat_model.py", "soat_anchors_test.py", "soat_utils.py" and "demo.py".   
 "soat_model.py" is the core code for our model SOAT.  
-	--It produces 12 results: (1) index_word.txt: index-word dictionary;  
+  *It produces 12 results: (1) index_word.txt: index-word dictionary;  
                               (2) word_index.txt: word-index dictionary;  
                               (3) doc_topic_distributions.npy: list of topic distributions for all documents;  
                               (4) docs_anchor_words_dict: a dictionary of anchor words corresponding to each document;  
@@ -24,9 +24,9 @@ This project contains four files: "soat_model.py", "soat_anchors_test.py", "soat
                               (11) topic_word: topic-word frequencies for the dataset;  
                               (12) word_scores_dict: a dictionary of the class-specific scores for all words.  
 "demo.py" shows a simple example of how to use SOAT for training documents.  
-	--We uploaded a demo dataset which sampled from 20Newsgroups (including 20 classes and 1000 documents) for demonstration.  
-	--We show the average class prediction accuracy of all words in the training steps.  
-	--We use and record the perplexities in each step of training to measure the convergence of model,where the pereplexity is calculated by  
+  *We uploaded a demo dataset which sampled from 20Newsgroups (including 20 classes and 1000 documents) for demonstration.  
+  *We show the average class prediction accuracy of all words in the training steps.  
+  *We use and record the perplexities in each step of training to measure the convergence of model,where the pereplexity is calculated by  
 	$\rm perplexity(S)=p(w_1,w_2,w_3,...,w_m)^{-1/m}\\ =\sqrt[m]{\prod_{i=1}^{m}\frac{1}{p(w_i|w_1,w_2,...,w_{i-1})}} \tag{1}$  
 "soat_anchors_test.py" is an example for showing the class-specific topical words and class anchor words.  
 	--We can set an example word (e.g., "key") as follow:  
