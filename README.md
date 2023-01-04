@@ -67,6 +67,18 @@ word = "key"
 **NOTE: 
 1. We show the average class prediction accuracy of all words in the training steps.
 2. We use and record the perplexities in each step of training to measure the convergence of model.  
-3. In order to combine more flexibly with the model based on neural network, we keep the topic assignment of all words, so it will spend a bit more time in training. For this demo, it takes about several minutes.
+3. In order to combine more flexibly with the model based on neural network, we keep the topic assignment of all words, so it will spend a bit more time in training. For this demo, it takes about several minutes. 
+4. The topic assignments for words of each document can be obtained by the following steps:
+```python 
+topic_num = demo.topic_num
+model_name = demo.model_name
+# file name of topic assignment for all words of each document
+docs_filename_SOAT = demo.save_p + model_name + 'docs_list' + str(topic_num) + '.npy'
+# read the topic assignment for all words of each document
+SOAT_docs_list = np.load(docs_filename_SOAT, allow_pickle=True)
+topic_assignments_list = []
+for doc in SOAT_docs_list:
+    topic_assignments_list.append(doc[:, 1])
+```  
  
 	
