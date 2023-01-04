@@ -79,6 +79,8 @@ model_name = demo.model_name
 docs_filename_SOAT = demo.save_p + model_name + 'docs_list' + str(topic_num) + '.npy'
 # read the topic assignment for all words of each document
 SOAT_docs_list = np.load(docs_filename_SOAT, allow_pickle=True)
+
+# define the topic assignments for words of each document 
 topic_assignments_list = []
 for doc in SOAT_docs_list:
     topic_assignments_list.append(doc[:, 1])
