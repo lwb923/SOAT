@@ -64,8 +64,9 @@ word = "key"
 * "soat_utils.py" is a file of common methods.  
   
   
-**NOTE:   
->>We keep the topic assignment of all words, so it will spend a bit more time in training. For this demo, it takes about several minutes. >>We show the average class prediction accuracy of all words in the training steps.  
->>We use and record the perplexities in each step of training to measure the convergence of model.  
+**NOTE: 
+1. We show the average class prediction accuracy of all words in the training steps.
+2. We use and record the perplexities in each step of training to measure the convergence of model.  
+3. We keep the topic assignment of all words, so it will spend a bit more time in training. For this demo, it takes about several minutes.
  
-		
+	
