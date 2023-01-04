@@ -8,7 +8,7 @@
   
 This project contains four files: "soat_model.py", "soat_anchors_test.py", "soat_utils.py" and "demo.py".   
 * "demo.py" shows a simple example of how to use SOAT for training documents.  
-	* We uploaded a demo dataset which sampled from 20Newsgroups (including 20 classes and 1000 documents) for demonstration. The dataset and its labels are load as folows:
+>>We uploaded a demo dataset which sampled from 20Newsgroups (including 20 classes and 1000 documents) for demonstration. The dataset and its labels are load as folows:
 ```python 
 data_name = '20Newsgroups'
 data = np.load("20Newsgroups_demo.npy", allow_pickle=True)
@@ -19,10 +19,8 @@ valid_plabels = utils.filter_labels(plabels_ground.copy(), train_test_ratio)
 # dataset: a list of document and a document is a list of words, e.g., ([["a","b", "c"], ["d", "e"]]).
 test_data = data
 ```
-
-	*Then the mode can be initialized and trained by the following steps:  
-	
-```python
+>>Then the mode can be initialized and trained by the following steps:
+```python  
 model = soat.SoatTopicModel(t_data=test_data,
                             plabel_list=valid_plabels,
                             plabels_ground=plabels_ground,
@@ -39,7 +37,7 @@ model.train()
 ```
      
 * "soat_model.py" is the core code for our model SOAT.  
-	*It produces 12 results: 
+>>It produces 12 results: 
 
 | Filename                          | Description                                                                                                                                                                            |
 |-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -58,7 +56,7 @@ model.train()
 
    
 * "soat_anchors_test.py" is an example for showing the class-specific topical words and class anchor words.  
-	*We can set an example word (e.g., "key") as follow:  
+>>We can set an example word (e.g., "key") as follow:  
 ```python  
 # set a test word  
 word = "key"  
