@@ -13,7 +13,8 @@ This project contains four files: "soat_model.py", "soat_anchors_test.py", "soat
 >> We use and record the perplexities in each step of training to measure the convergence of model.
      
 * "soat_model.py" is the core code for our model SOAT.  
->> It produces 12 results: (1) index_word.txt: index-word dictionary;  
+>> It produces 12 results: 
+>>>>(1) index_word.txt: index-word dictionary;  
 >>>>(2) word_index.txt: word-index dictionary;  
 >>>>(3) doc_topic_distributions.npy: list of topic distributions for all documents;  
 >>>>(4) docs_anchor_words_dict: a dictionary of anchor words corresponding to each document;  
