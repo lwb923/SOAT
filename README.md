@@ -20,7 +20,7 @@ valid_plabels = utils.filter_labels(plabels_ground.copy(), train_test_ratio)
 test_data = data
 ```
 >>
->> We show the average class prediction accuracy of all words in the training steps.  
+>> 
 >> We use and record the perplexities in each step of training to measure the convergence of model.
      
 * "soat_model.py" is the core code for our model SOAT.  
@@ -47,6 +47,7 @@ word = "key"
 * "soat_utils.py" is a file of common methods.  
   
   
-**NOTE: We keep the topic assignment of all words, so it will spend a bit more time in training. For this demo, it takes about several minutes. 
+**NOTE: 1. We keep the topic assignment of all words, so it will spend a bit more time in training. For this demo, it takes about several minutes. 
+We show the average class prediction accuracy of all words in the training steps.  
 		
 
