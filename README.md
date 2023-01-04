@@ -70,6 +70,9 @@ word = "key"
 3. In order to combine more flexibly with the model based on neural network, we keep the topic assignment of all words, so it will spend a bit more time in training. For this demo, it takes about several minutes. 
 4. The topic assignments for words of each document can be obtained by the following steps:
 ```python 
+import numpy as np
+import demo
+
 topic_num = demo.topic_num
 model_name = demo.model_name
 # file name of topic assignment for all words of each document
