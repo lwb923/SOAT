@@ -25,6 +25,7 @@ test_data = data
      
 * "soat_model.py" is the core code for our model SOAT.  
 >> It produces 12 results: 
+
 | Directory                         | Description                                                                                                                                                                            |
 |-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `index_word.txt`                  | index-word dictionary                                                                                                                                                                  |
