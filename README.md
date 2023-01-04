@@ -19,14 +19,29 @@ valid_plabels = utils.filter_labels(plabels_ground.copy(), train_test_ratio)
 # dataset: a list of document and a document is a list of words, e.g., ([["a","b", "c"], ["d", "e"]]).
 test_data = data
 ```
->>
->> 
+>> Then the mode can be initialized and trained by the following steps:
+```python
+model = soat.SoatTopicModel(t_data=test_data,
+                            plabel_list=valid_plabels,
+                            plabels_ground=plabels_ground,
+                            rounds=round_num,
+                            save_p=save_p,
+                            palpha=palpha,
+                            pbeta=pbeta,
+                            ptau=ptau,
+                            proc_num=proc_num,
+                            topic_num=topic_num,
+                            code_mode=code_mode,
+                            model_name=model_name)
+    model.train()
+```
+>> We show the average class prediction accuracy of all words in the training steps. 
 >> We use and record the perplexities in each step of training to measure the convergence of model.
      
 * "soat_model.py" is the core code for our model SOAT.  
 >> It produces 12 results: 
 
-| Directory                         | Description                                                                                                                                                                            |
+| Filename                          | Description                                                                                                                                                                            |
 |-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `index_word.txt`                  | index-word dictionary                                                                                                                                                                  |
 | `word_index.txt`                  | word-index dictionary                                                                                                                                                                  |
@@ -51,7 +66,6 @@ word = "key"
 * "soat_utils.py" is a file of common methods.  
   
   
-**NOTE: 1. We keep the topic assignment of all words, so it will spend a bit more time in training. For this demo, it takes about several minutes. 
-We show the average class prediction accuracy of all words in the training steps.  
+**NOTE: We keep the topic assignment of all words, so it will spend a bit more time in training. For this demo, it takes about several minutes. 
+ 
 		
-
