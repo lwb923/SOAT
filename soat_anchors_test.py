@@ -87,7 +87,8 @@ if __name__ == '__main__':
                                                       true_label_list,
                                                       SOAT_word2idx,
                                                       SOAT_idx2word,
-                                                      label_num, topk_words)
+                                                      label_num, 
+                                                      topk_words)
     # output class-specific anchor words for the given test word
     print("class-specific anchor words:")
     for label in range(1, label_num + 1):
