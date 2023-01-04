@@ -41,9 +41,9 @@ model.train()
 
 | Filename                          | Description                                                                                                                                                                            |
 |-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `index_word.txt`                  | index-word dictionary                                                                                                                                                                  |
-| `word_index.txt`                  | word-index dictionary                                                                                                                                                                  |
-| `doc_topic_distributions.npy`     | list of topic distributions for all documents                                                                                                                                          |
+| `index_word`                  | index-word dictionary                                                                                                                                                                  |
+| `word_index`                  | word-index dictionary                                                                                                                                                                  |
+| `doc_topic_distributions`     | list of topic distributions for all documents                                                                                                                                          |
 | `docs_anchor_words_dict`          | a dictionary of anchor words corresponding to each document                                                                                                                            |
 | `docs_list`                       | all document-related data, including the word list in each document, the topic corresponding to the word, the dependence strength of the word on the anchor word,and the tf-idf weight |
 | `labeled_topic_word_distribution` | class-specific topic-word distributions, i.e. class-specific list of word sense vectors                                                                                                |
