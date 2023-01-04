@@ -19,7 +19,7 @@ valid_plabels = utils.filter_labels(plabels_ground.copy(), train_test_ratio)
 # dataset: a list of document and a document is a list of words, e.g., ([["a","b", "c"], ["d", "e"]]).
 test_data = data
 ```
-	*Then the mode can be initialized and trained by the following steps:
+	*Then the mode can be initialized and trained by the following steps:  
 ```python
 model = soat.SoatTopicModel(t_data=test_data,
                             plabel_list=valid_plabels,
