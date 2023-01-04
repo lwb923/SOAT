@@ -29,10 +29,10 @@ This project contains four files: "soat_model.py", "soat_anchors_test.py", "soat
    
 * "soat_anchors_test.py" is an example for showing the class-specific topical words and class anchor words.  
 >>We can set an example word (e.g., "key") as follow:  
-	```python  
-	# set a test word  
-    word = "key"  
-	```  
+```python  
+# set a test word  
+word = "key"  
+``` 
 * "soat_utils.py" is a file of common methods.  
   
   
