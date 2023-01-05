@@ -1,7 +1,7 @@
 # A Topic Model - SOAT
 
-* A class-specific sense aware topic model based on soft orthogonalization (SOAT), which is a semi-supervised model for document classification-based tasks.  
-* We aim to model the class-specific word senses in topic space. The challenge is to optimize the class separability of the senses, i.e., obtaining sense vectors with both high intra-class and low inter-class similarities. We use soft orthogonalization for topics, i.e., reserving all topics while learning a group of class-specific weights. Besides, we detect highly class-specific words in each document and use them to guide sense estimation.  
+* It is a class-specific sense aware topic model based on soft orthogonalization (SOAT), which is a semi-supervised model for document classification-based tasks.  
+* It aims to model the class-specific word senses in topic space. The idea is to optimize the class separability of the senses, i.e., obtaining sense vectors with both high intra-class and low inter-class similarities. It is based on soft orthogonalization for topics, i.e., reserving all topics while learning a group of class-specific weights. Besides, highly class-specific words in each document are detected and used to guide the sense estimation.  
   
    
 ## Usage
