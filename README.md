@@ -64,11 +64,11 @@ word = "key"
 * "soat_utils.py" is a file of common methods.  
   
   
-## NOTE: 
-1. We show the average class prediction accuracy of all words in the training steps.
-2. We use and record the perplexities in each step of training to measure the convergence of model.  
-3. In order to combine more flexibly with the model based on neural network, we keep the topic assignment of all words, so it will spend a bit more time in training. For this demo, it takes about several minutes. 
-4. The topic assignments for words of each document can be obtained by the following steps:
+## NOTES: 
+* We show the average class prediction accuracy of all words in the training steps.
+* We use and record the perplexities in each step of training to measure the convergence of model.  
+* In order to combine more flexibly with the model based on neural network, we keep the topic assignment of all words, so it will spend a bit more time in training. For this demo, it takes about several minutes. 
+* The topic assignments for words of each document can be obtained by the following steps:
 ```python 
 import numpy as np
 import demo
