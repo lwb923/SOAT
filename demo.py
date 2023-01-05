@@ -36,9 +36,9 @@ save_p = "test_result/"
 
 # # dataset
 data_name = '20Newsgroups'
-data = np.load("20Newsgroups_demo.npy", allow_pickle=True)
+data = np.load("demo-data/20Newsgroups_demo.npy", allow_pickle=True)
 # label list for all documents
-plabels_ground = np.load("20Newsgroups_labels_demo.npy", allow_pickle=True)
+plabels_ground = np.load("demo-data/20Newsgroups_labels_demo.npy", allow_pickle=True)
 # label list for only labeled documents, where unlabeled ones are denoted by 0, e.g., [1,2,0,0,...].
 valid_plabels = utils.filter_labels(plabels_ground.copy(), train_test_ratio)
 # dataset: a list of document and a document is a list of words, e.g., ([["a","b", "c"], ["d", "e"]]).
