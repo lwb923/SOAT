@@ -46,8 +46,8 @@ test_data = data
 
 
 if __name__ == '__main__':
-    print(test_data[:5])
-    print(valid_plabels[:5])
+    print("sampled data:", test_data[:5])
+    print("sampled labels:", valid_plabels[:5])
     model = soat.SoatTopicModel(t_data=test_data,
                                 plabel_list=valid_plabels,
                                 plabels_ground=plabels_ground,
