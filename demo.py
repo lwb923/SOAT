@@ -19,10 +19,12 @@ model_name = 'soat_'
 topic_num = 20
 # set the sampling rounds for parameter estimation
 round_num = 5
-# hyper-parameter for doc-topic distribution
+# hyperparameter for doc-topic distribution
 palpha = 0.05
-# hyper-parameter for topic-word distribution
+# hyperparameter for topic-word distribution
 pbeta = 0.05
+# hyperparameter for class-specific topic distribution
+pgamma = 0.05
 # threshold for detecting anchor words
 ptau = 0.35
 # percentage of labeled documents (training data)
@@ -53,6 +55,7 @@ if __name__ == '__main__':
                                 save_p=save_p,
                                 palpha=palpha,
                                 pbeta=pbeta,
+                                pgamma=pgamma,
                                 ptau=ptau,
                                 proc_num=proc_num,
                                 topic_num=topic_num,
