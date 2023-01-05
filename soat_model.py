@@ -21,11 +21,11 @@ class SoatTopicModel:
     are further optimized with the guidance of the class anchor words in each document. Note that, a function named starting
     with "p_" is a parallel version of the original one.
 
-    It produces 12 results: (1) index_word.txt: index-word dictionary;
-                            (2) word_index.txt: word-index dictionary;
+    It produces 12 results: (1) index_word: index-word dictionary;
+                            (2) word_index: word-index dictionary;
                             (3) doc_topic_distributions.npy: list of topic distributions for all documents;
                             (4) docs_anchor_words_dict: a dictionary of anchor words corresponding to each document;
-                            (5) docs_list: All document-related data, including the word list in each document, the
+                            (5) docs_list: all document-related data, including the word list in each document, the
                             topic corresponding to the word, the dependence strength of the word on the anchor word,
                             and the tf-idf weight (optional);
                             (6) labeled_topic_word_distribution: class-specific topic-word distributions, i.e. class-
