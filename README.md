@@ -57,10 +57,24 @@ model.train()
 
    
 * "soat_anchors_test.py" is an example for showing the class-specific topical words and class anchor words.  
->>We can set an example word (e.g., "key") as follow:  
+>>We can set an example word (e.g., "key") and compute its top-k class-specific topical words as well as anchor words as follows:  
 ```python  
 # set a test word  
 word = "key"  
+
+# compute top-k class-specific topical words
+SOAT_label_words = utils.get_label_words(SOAT_labeled_topic_word_dist[1:],
+                                         SOAT_labeled_topic_word_dist[1:],
+                                         SOAT_idx2word, topk_words)
+					 
+# compute top-k class-specific anchor words
+word_anchor_dict = utils.get_word_labeled_anchors(word,
+                                                  SOAT_docs_list,
+                                                  docs_anchor_words_dict,
+                                                  true_label_list,
+                                                  SOAT_word2idx,
+                                                  SOAT_idx2word,
+                                                  label_num, topk_words)
 ``` 
 * "soat_utils.py" is a file of common methods.  
   
