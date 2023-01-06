@@ -81,7 +81,7 @@ word_anchor_dict = utils.get_word_labeled_anchors(word,
   
   
 ## NOTES: 
-* We show the average class prediction accuracy of all words in the training steps.
+* We show the average class prediction accuracy of all unlabeled words in the training steps.
 * We use and record the perplexities in each step of training to measure the convergence of model.  
 * In order to combine more flexibly with the model based on neural network, we keep the topic assignment of all words, so it will spend a bit more time in training. For this demo, it takes about several minutes. 
 * The topic assignments for words of each document can be obtained by the following steps:
