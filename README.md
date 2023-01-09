@@ -58,7 +58,7 @@ model.train()
 | `word_scores_dict`                | a dictionary of the class-specific scores for all words                                                                                                                                |
 
    
-* "soat_anchors_test.py" is an example for showing the class-specific topical words and class anchor words. The different class-anchor words for a word can be used to interpret class-specific senses intuitively. 
+* "soat_anchors_test.py" is an example for showing the class-specific topical words and class anchor words. The different class-anchor words for a word can be used to interpret its class-specific senses intuitively. 
 >>We can set an example word (e.g., "key") and compute its top-k class-specific topical words as well as anchor words as follows:  
 ```python  
 # set a test word  
