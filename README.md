@@ -3,7 +3,7 @@
 * It is a class-specific sense aware topic model based on soft orthogonalization (SOAT), which is a semi-supervised model for document classification-based tasks.   
 	* It aims to model the class-specific word senses in topic space. The idea is to optimize the class separability of the senses, i.e., obtaining sense vectors with both high intra-class and low inter-class similarities. It is based on soft orthogonalization for topics, i.e., reserving all topics while learning a group of class-specific weights. 
 	* Highly class-specific words in each document are detected and used to guide the sense estimation.  
-* We give three examples: 1) how to train the model an obtain the results (demo.py); 2) how to obtain class-specific topical words and class anchor words (soat_anchors_test.py); 3) how to get topic assinments of all words (the 4th item in Notes).
+* We give three examples: 1) how to train the model and obtain the results (demo.py); 2) how to obtain class-specific topical words and class anchor words (soat_anchors_test.py); 3) how to get topic assinments of all words (the 4th item in Notes).
  
    
 ## Usage
