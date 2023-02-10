@@ -10,7 +10,7 @@
   
 This project contains four files: "soat_model.py", "soat_anchors_test.py", "soat_utils.py" and "demo.py".   
 * "demo.py" shows a simple example of how to use SOAT for training documents.  
->>We uploaded a demo dataset which are randomly sampled from 20Newsgroups (including 20 classes and 1000 documents) for demonstration. The dataset and its labels are load as folows:
+>>We uploaded a demo dataset which are randomly sampled from 20Newsgroups (including 20 classes and 1000 documents) for demonstration. The dataset and its labels are load as follows:
 ```python 
 data_name = '20Newsgroups'
 data = np.load("20Newsgroups_demo.npy", allow_pickle=True)
